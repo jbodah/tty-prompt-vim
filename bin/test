@@ -1,0 +1,7 @@
+#!/usr/bin/env ruby
+
+require "bundler/setup"
+require "tty/prompt/vim"
+
+@prompt = TTY::Prompt.new
+@prompt.select("hi", "a", "b", "c")
